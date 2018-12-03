@@ -20,7 +20,7 @@
   let b = 25.0;
   let c = 25.1;
   // true true false
-  console.log(Number.isInteger(a), Number.isInteger(b), Number.isInteger(c)); 
+  console.log(Number.isInteger(a), Number.isInteger(b), Number.isInteger(c));
   console.log(Number.isInteger('25')); // false,接收的参数必须是一个Number类型
 }
 
