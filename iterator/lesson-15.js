@@ -37,7 +37,7 @@
 }
 
 {
-  // for...of
+  // for...of  背后的实现原理就是Iterator，要遍历的对象一定要有Iterator接口
   let arr = ['hello', 'world'];
   for (let value of arr) {
     console.log('value', value);
