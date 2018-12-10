@@ -44,7 +44,23 @@
   console.log(status.next());
   console.log(status.next());
 }
-
+{
+  // async，await 语法
+  let state = async function () {
+    while (true) {
+      await 'A';
+      await 'B';
+      await 'C';
+    }
+  };
+  let status = state();
+  console.log("async await", status.next());
+  console.log("async await", status.next());
+  console.log("async await", status.next());
+  console.log("async await", status.next());
+  console.log("async await", status.next());
+  console.log("async await", status.next());
+}
 {
   // generator实例1：抽奖
   let draw = function (count) {
