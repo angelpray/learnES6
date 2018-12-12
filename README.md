@@ -2,4 +2,5 @@
 
 ## 进阶熟练掌握ES6
 - [x] 掌握基本语法以及API
+- [x] 《NODE IN ACTION》
 - [ ] 配合Express做一个完全ES6的项目
