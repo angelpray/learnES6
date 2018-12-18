@@ -48,7 +48,7 @@
 }
 
 {
-  // 静态方法:通过类调用而不是实例调用
+  // 静态方法:通过类调用而不是实例调用,不加static则是实例方法
   class Parent {
     constructor(name = "JR") {
       this.name = name;
@@ -62,7 +62,7 @@
 }
 
 {
-  // 静态属性
+  // 静态属性,不加static则是实例方法
   class Parent {
     constructor(name = "JR") {
       this.name = name;
