@@ -14,3 +14,32 @@ function test() {
   obj.b = 2;
 }
 test();
+
+// for循环
+var func = [];
+
+for (var i = 0; i < 10; i++) {
+  // 循环内部创建的函数全都保留了对相同变量i的引用
+  func.push(function() {
+    console.log(i);
+  });
+}
+
+func.forEach(function(func) {
+  func(); 
+  // 输出10个10
+});
+
+var func = [];
+
+for (let i = 0; i < 10; i++) {
+  // 每次迭代循环都会创建一个新变量i
+  func.push(function() {
+    console.log(i);
+  });
+}
+
+func.forEach(function(func) {
+  func(); 
+  // 输出10个10
+});
